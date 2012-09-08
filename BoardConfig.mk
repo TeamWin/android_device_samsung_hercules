@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/skyrocket/BoardConfigVendor.mk
+-include vendor/samsung/hercules/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := false
@@ -13,6 +13,7 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
 TARGET_ARCH_VARIANT := armv7-a-neon
+ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 
 TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
@@ -34,7 +35,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A00000
 # BOARD_SYSTEMIMAGE_PARTITION_SIZE := 617193472
 # BOARD_USERDATAIMAGE_PARTITION_SIZE := 2115760128
 
-TARGET_PREBUILT_KERNEL := device/samsung/skyrocket/kernel
+TARGET_PREBUILT_KERNEL := device/samsung/hercules/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -45,3 +46,21 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_VOLD_MAX_PARTITIONS := 28
 BOARD_USES_SAMSUNG_AUDIO_STUB := true
+
+
+#TWRP config
+DEVICE_RESOLUTION := 480x800
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_NO_REBOOT_BOOTLOADER := true
+TW_INTERNAL_STORAGE_PATH := "/sdcard"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_EXTERNAL_STORAGE_PATH := "/external_sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sdcard"
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p25"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "noauto_da_alloc"
+TW_CRYPTO_FS_FLAGS := "0x00000006"
+TW_CRYPTO_KEY_LOC := "/efs/metadata"

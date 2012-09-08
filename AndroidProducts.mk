@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_skyrocket.mk
+    $(LOCAL_DIR)/device_hercules.mk

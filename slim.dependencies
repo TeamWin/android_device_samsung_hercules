@@ -4,8 +4,8 @@
     "target_path": "vendor/samsung"
   },
   {
-    "repository": "SlimRoms/device_samsung_msm8860-common",
-    "target_path": "device/samsung/msm8860-common"
-  },
+    "repository": "SlimRoms/device_samsung_msm8660-common",
+    "target_path": "device/samsung/msm8660-common"
+  }
 ]
 

@@ -22,32 +22,6 @@ $(call inherit-product, vendor/slim/config/common_sgs.mk)
 PRODUCT_COPY_FILES +=  \
     vendor/slim/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
 
-#copy kernel and modules
-PRODUCT_COPY_FILES += \
-	device/samsung/hercules/prebuilt/boot.img:system/slimkernel/boot.img \
-	device/samsung/hercules/prebuilt/boot.img:kernel \
-	device/samsung/hercules/prebuilt/system/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/cls_flow.ko:system/lib/modules/cls_flow.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/dal_remotetest.ko:system/lib/modules/dal_remotetest.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/dma_test.ko:system/lib/modules/dma_test.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/evbug.ko:system/lib/modules/evbug.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/gspca_main.ko:system/lib/modules/gpsca_main.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/ksapi.ko:system/lib/modules/ksapi.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/lcd.ko:system/lib/modules/lcd.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/msm_tsif.ko:system/lib/modules/msm_tsif.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/qce.ko:system/lib/modules/qce.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/qcedev.ko:system/lib/modules/qcedev.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/qcrypto.ko:system/lib/modules/qcrypto.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/sch_dsmark.ko:system/lib/modules/sch_dsmark.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/tsif_chrdev.ko:system/lib/modules/tsif_chrdev.ko \
-	device/samsung/hercules/prebuilt/system/lib/modules/vibrator.ko:system/lib/modules/vibrator.ko \
-	device/samsung/hercules/prebuilt/system/lib/hw/lights.msm8660.so:system/lib/hw/lights.msm8660.so
-
 #copy 00check
 PRODUCT_COPY_FILES += \
 	vendor/slim/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check

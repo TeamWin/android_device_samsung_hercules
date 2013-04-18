@@ -15,7 +15,7 @@
 #
 
 # Also get non-open-source specific aspects if available
-$(call inherit-product, vendor/samsung/hercules/hercules-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/hercules/hercules-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/hercules/overlay
@@ -24,12 +24,9 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/hercules/overlay
 PRODUCT_COPY_FILES += \
     device/samsung/hercules/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
 
-# Bluetooth firmware
+# BT firmware
 PRODUCT_COPY_FILES += \
     device/samsung/hercules/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
 # Inherit from celox-common
 $(call inherit-product, device/samsung/celox-common/celox-common.mk)
-
-# Inherit from msm8660-common
-$(call inherit-product, device/samsung/msm8660-common/msm8660.mk)

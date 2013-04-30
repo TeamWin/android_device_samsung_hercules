@@ -20,11 +20,6 @@
     "branch": "cm-10.1"
   },
   {
-    "repository": "CyanogenMod/android_kernel_samsung_msm8660-common",
-    "target_path": "kernel/samsung/msm8660-common",
-    "branch": "cm-10.1"
-  },
-  {
     "repository": "SlimRoms/hardware_qcom_display-caf",
     "target_path": "hardware/qcom/display-caf",
     "branch": "jb4.2"
@@ -33,5 +28,10 @@
     "repository": "SlimRoms/hardware_qcom_audio-caf",
     "target_path": "hardware/qcom/audio-caf",
     "branch": "jb4.2"
+  },
+  {
+    "repository": "carvsdriver/android_kernel_samsung_msm8660-common",
+    "target_path": "kernel/samsung/msm8660-common",
+    "branch": "marla"
   }
 ]

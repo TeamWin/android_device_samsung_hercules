@@ -20,14 +20,14 @@
     "branch": "cm-10.1"
   },
   {
-    "repository": "SlimRoms/hardware_qcom_display-caf",
+    "repository": "CyanogenMod/android_hardware_qcom_display-caf",
     "target_path": "hardware/qcom/display-caf",
-    "branch": "jb4.2"
+    "branch": "caf-test"
   },
   {
-    "repository": "SlimRoms/hardware_qcom_audio-caf",
+    "repository": "CyanogenMod/android_hardware_qcom_audio-caf",
     "target_path": "hardware/qcom/audio-caf",
-    "branch": "jb4.2"
+    "branch": "cm-10.1"
   },
   {
     "repository": "carvsdriver/android_kernel_samsung_msm8660-common",

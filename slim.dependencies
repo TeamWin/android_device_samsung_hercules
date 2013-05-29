@@ -22,7 +22,7 @@
   {
     "repository": "CyanogenMod/android_hardware_qcom_display-caf",
     "target_path": "hardware/qcom/display-caf",
-    "branch": "caf-test"
+    "branch": "cm-10.1"
   },
   {
     "repository": "CyanogenMod/android_hardware_qcom_audio-caf",

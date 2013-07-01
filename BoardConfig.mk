@@ -41,6 +41,9 @@ TARGET_KERNEL_CONFIG        := cyanogenmod_hercules_defconfig
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3/bin/arm-eabi-
 
+# Assert minimum baseband version
+TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt
+
 # cat /proc/emmc
 #dev:        size     erasesize name
 #mmcblk0p22: 00fffc00 00000200 "recovery"

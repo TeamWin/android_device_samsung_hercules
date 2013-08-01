@@ -2,36 +2,36 @@
   {
     "repository": "SlimRoms/proprietary_vendor_samsung",
     "target_path": "vendor/samsung",
-    "branch": "jb4.2"
+    "branch": "jb4.3"
   },
   {
     "repository": "SlimRoms/device_samsung_qcom-common",
     "target_path": "device/samsung/qcom-common",
-    "branch": "jb4.2"
+    "branch": "jb4.3"
   },
   {
     "repository": "SlimRoms/device_samsung_msm8660-common",
     "target_path": "device/samsung/msm8660-common",
-    "branch": "jb4.2"
+    "branch": "jb4.3"
   },
   {
     "repository": "SlimRoms/device_samsung_celox-common",
     "target_path": "device/samsung/celox-common",
-    "branch": "jb4.2"
+    "branch": "jb4.3"
   },
   {
     "repository": "SlimRoms/hardware_qcom_display-caf",
     "target_path": "hardware/qcom/display-caf",
-    "branch": "jb4.2"
+    "branch": "jb4.3"
   },
   {
     "repository": "SlimRoms/hardware_qcom_audio-caf",
     "target_path": "hardware/qcom/audio-caf",
-    "branch": "jb4.2"
+    "branch": "jb4.3"
   },
   {
-    "repository": "carvsdriver/android_kernel_samsung_msm8660-common",
+    "repository": "CyanogenMod/android_kernel_samsung_msm8660-common",
     "target_path": "kernel/samsung/msm8660-common",
-    "branch": "marla-slim"
+    "branch": "cm-10.2"
   }
 ]

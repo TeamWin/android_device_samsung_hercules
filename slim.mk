@@ -1,11 +1,12 @@
-$(call inherit-product, device/samsung/hercules/full_hercules.mk)
-
-# Release name
-PRODUCT_RELEASE_NAME := hercules
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
+
+# Inherit device configuration
+$(call inherit-product, device/samsung/hercules/full_hercules.mk)
+
+# Inherit some common Slim stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Inherit some common Slim stuff.
 $(call inherit-product, vendor/slim/config/gsm.mk)
@@ -13,12 +14,13 @@ $(call inherit-product, vendor/slim/config/gsm.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 
-# Inherit some common Slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
-
 # Inherit torch settings
 $(call inherit-product, vendor/slim/config/common_ledflash.mk)
 
+# Release name
+PRODUCT_RELEASE_NAME := hercules
+
+# Device identifier
 PRODUCT_NAME := slim_hercules
 PRODUCT_DEVICE := hercules
 

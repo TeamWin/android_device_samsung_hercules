@@ -14,9 +14,6 @@ $(call inherit-product, vendor/slim/config/gsm.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 
-# Inherit torch settings
-$(call inherit-product, vendor/slim/config/common_ledflash.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := hercules
 

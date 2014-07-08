@@ -30,8 +30,8 @@
     "branch": "kk4.4"
   },
   {
-    "repository": "CyanogenMod/android_kernel_samsung_msm8660-common",
-    "target_path": "kernel/samsung/msm8660-common",
-    "branch": "cm-11.0"
+    "repository": "SlimRoms/kernel_samsung_msm8660",
+    "target_path": "kernel/samsung/msm8660",
+    "branch": "kk4.4"
   }
 ]

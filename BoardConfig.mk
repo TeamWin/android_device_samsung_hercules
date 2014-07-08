@@ -38,7 +38,6 @@ TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules
 
 # Kernel
 TARGET_KERNEL_CONFIG        := cyanogenmod_hercules_defconfig
-TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 
 # Assert minimum baseband version
 TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt

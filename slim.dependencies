@@ -1,10 +1,5 @@
 [
   {
-    "repository": "SlimRoms/proprietary_vendor_samsung",
-    "target_path": "vendor/samsung",
-    "branch": "kk4.4"
-  },
-  {
     "repository": "SlimRoms/device_samsung_qcom-common",
     "target_path": "device/samsung/qcom-common",
     "branch": "kk4.4"

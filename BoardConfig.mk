@@ -25,14 +25,11 @@ TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/hercules/bluetooth
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/skyrocket/bluetooth
-
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_hercules_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8660
 #KERNEL_TOOLCHAIN_PREFIX := arm-linux-gnueabihf-
-#KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86/toolchain/linaro-4.7-12.10/bin/"
+#KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/linaro-4.7-12.10/bin/"
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072

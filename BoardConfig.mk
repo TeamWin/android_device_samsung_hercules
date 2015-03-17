@@ -25,9 +25,6 @@ TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/hercules/bluetooth
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/skyrocket/bluetooth
-
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_hercules_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8660
@@ -43,5 +40,5 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044333056
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Resolution
-DEVICE_RESOLUTION := 480x800
+DEVICE_RESOLUTION := 800x480
 

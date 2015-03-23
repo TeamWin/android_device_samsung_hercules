@@ -27,7 +27,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/hercules/bluetooth
 
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_hercules_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/msm8660
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8660-common
 #KERNEL_TOOLCHAIN_PREFIX := arm-linux-gnueabihf-
 #KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86/toolchain/linaro-4.7-12.10/bin/"
 
@@ -40,5 +40,5 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044333056
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Resolution
-DEVICE_RESOLUTION := 800x480
+DEVICE_RESOLUTION := 480x800
 

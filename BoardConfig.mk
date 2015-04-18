@@ -27,7 +27,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/hercules/bluetooth
 
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_hercules_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/msm8660
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8660-common
 #KERNEL_TOOLCHAIN_PREFIX := arm-linux-gnueabihf-
 #KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/linaro-4.7-12.10/bin/"
 

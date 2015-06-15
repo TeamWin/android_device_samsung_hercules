@@ -23,6 +23,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/hercules/overlay
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/hercules/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/samsung/hercules/kernel:kernel
 
 # BT firmware
 PRODUCT_COPY_FILES += \

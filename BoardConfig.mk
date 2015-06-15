@@ -37,8 +37,8 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogenmod_hercules_defconfig
-TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
+#TARGET_KERNEL_CONFIG        := cyanogenmod_hercules_defconfig
+#TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 
 # Assert minimum baseband version
 TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt
@@ -59,4 +59,26 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044333056
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/hercules/bluetooth
+
+#TWRP config
+DEVICE_RESOLUTION := 480x800
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_NO_REBOOT_BOOTLOADER := true
+TW_INTERNAL_STORAGE_PATH := "/sdcard"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p25"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "noauto_da_alloc"
+TW_CRYPTO_FS_FLAGS := "0x00000006"
+TW_CRYPTO_KEY_LOC := "/efs/metadata"
+TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.196609/leds/lcd-backlight/brightness
+TW_MAX_BRIGHTNESS := 255
+
+TARGET_CPU_VARIANT := cortex-a9
+HAVE_SELINUX := true
 
